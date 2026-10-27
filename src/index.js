@@ -1,6 +1,6 @@
 
 
-
+import "dotenv/config"
 import bootstrap from "./app.bootstrap.js"
 
 bootstrap()

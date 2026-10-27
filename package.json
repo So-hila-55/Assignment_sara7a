@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "start:dev": "nodemon src/index.js"
+    "start:dev": "nodemon src/index.js",
+     "dev": "node --watch src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,11 +14,20 @@
   "type": "module",
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "dotenv": "^18.0.5",
     "express": "^5.2.1",
     "google-auth-library": "^11.1.0",
-    "mongoose": "^9.10.2"
+    "joi": "^18.2.9",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.2",
+    "multer": "^2.4.0",
+    "nodemailer": "^10.1.1",
+    "redis": "^6.3.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
+  },
+  "allowScripts": {
+    "bcrypt@6.0.0": true
   }
 }
